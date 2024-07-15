@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+<body >
+    <div class="recipe-container-main">
+         <div class="recipe-container">
+    <div class="thumbnail">
+      <img src="<%= image %>" alt="thumbnail" class="recipeImage"/>
+    </div>
+    <div class="recipe">
+      <h2 class="title"><%=title %></h2>
+      <div class="ingridents-div">
+        <h3>Ingridents :</h3>
+      <ul class="ingrident-List">
+        <% ingidents.forEach(ingrident => { %>
+        <li> <%= ingrident %></li>
+      <% }); %>
+      </ul>
+      </div>
+      <h3>Instructions :</h3>
+      <p class="instructions"><%= instructions %></p>
+    </div>
+  </div>
+    </div>
+ 
+</body>
+</html>

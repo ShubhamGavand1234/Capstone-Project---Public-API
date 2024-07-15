@@ -74,11 +74,11 @@ nav {
 
 .hero-text h1 {
   font-family: "Playwrite CU";
-  font-size: 35px;
+  font-size: 40px;
   font-style: italic;
   font-weight: 900;
   color: #fff;
-  text-shadow: 0 0 20px #534b52;
+  text-shadow: 5px 5px 25px #534b52;
 }
 
 .search {
@@ -89,9 +89,85 @@ nav {
 .search .input {
   height: 100%;
   width: 480px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  color: #2d232e;
+  box-shadow: 0 0 25px #474747;
 }
 
 .search .btn {
   height: 100%;
   width: 114px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #f1f0ea;
+  background-color: #2d232e;
+  box-shadow: 0 0 25px #474747;
+}
+
+.search .btn:focus,
+.search .input:focus {
+  outline: none;
+}
+
+.search .btn:active {
+  scale: 0.8;
+}
+.recipe-container-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipe-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  /* background-color: #2d232e; */
+  width: 80%;
+  align-self: center;
+}
+
+.recipe-container img {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.recipe-container .recipe {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.recipe-container .recipe ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.recipe-container .recipe .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ingridents-div {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.ingridents-div h3 {
+  margin-right: 10px;
+}
+
+.ingridents-div .ingrident-List {
+  margin-bottom: 50px;
+}
+
+.ingridents-div .ingrident-List li {
+  margin-right: 7px;
 }
