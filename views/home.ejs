@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+<body>
+    <div class="container-main-cards">
+        <% carddata.forEach(card => { %>
+            <div class="recipe-card">
+            <div class="card-thumbnail"><a href="/singlerecipefromid?id=<%=card.idMeal%>"
+                > <img src="<%= card.strMealThumb %>/preview"></a></div>
+            <div class="card-title"><%= card.strMeal %></div>
+            <div class="card-id"><%= card.idMeal  %></div>
+        </div>
+        <% }); %>
+
+    
+    </div>
+
+</body>
+</html>

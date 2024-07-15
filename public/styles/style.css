@@ -171,3 +171,35 @@ nav {
 .ingridents-div .ingrident-List li {
   margin-right: 7px;
 }
+
+.container-main-cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* grid-template-rows: repeat(auto, 400px); */
+  gap: 50px;
+  padding: 20px;
+}
+
+.recipe-card {
+  background-color: #fff; /* adjust as needed */
+  border: 1px solid #ddd; /* adjust as needed */
+  border-radius: 8px; /* adjust as needed */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* adjust as needed */
+}
+
+.card-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-title,
+.card-id {
+  padding: 8px; /* adjust as needed */
+  text-align: center; /* adjust as needed */
+}
+
+.recipe-card:hover {
+  scale: 1.1;
+}
